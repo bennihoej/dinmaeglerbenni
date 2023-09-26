@@ -1,5 +1,6 @@
 import forsidebillede1 from '../assets/dinmaegler.png';
 import { styled } from "styled-components";
+import { Link } from 'react-router-dom';
 
 const StyledHeader= styled.header`
 background-color: white;
@@ -28,11 +29,11 @@ const Header = () => {
 <StyledHeader>
     <StyledNav>
     <StyledUl>
-    <StyledList><img src={forsidebillede1} alt="Headerbillede" /></StyledList>
-    <StyledList><StyledA href="">Boliger til salg</StyledA></StyledList>
-    <StyledList><StyledA href="">Mæglere</StyledA></StyledList>
-    <StyledList><StyledA href="">Mine favoritter</StyledA></StyledList>
-    <StyledList><StyledA href="">Kontakt os</StyledA></StyledList>
+    <StyledList><Link to="/"><img src={forsidebillede1} alt="Headerbillede" /></Link></StyledList>
+    <StyledList><Link to="/Listview"><StyledA href="">Boliger til salg</StyledA></Link></StyledList>
+    <StyledList><Link to="/Medarbejderlist"><StyledA href="">Mæglere</StyledA></Link></StyledList>
+    <StyledList><Link to="/Favoritboliger"><StyledA href="">Mine favoritter</StyledA></Link></StyledList>
+    <StyledList><Link to="/Kontaktos"><StyledA href="">Kontakt os</StyledA></Link></StyledList>
     </StyledUl>
     </StyledNav>
 </StyledHeader>

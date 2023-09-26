@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-
+import { Link } from 'react-router-dom';
 
 const StyledTopline = styled.section`
 display: flex;
@@ -23,7 +23,7 @@ const Topline = () => {
     <p><i class="fa-solid fa-phone"></i>+45 7070 4000 </p>
 </StyledMiddlediv>
 <div>
-    <p><i class="fa-solid fa-user"></i>Log ind</p>
+<p><Link to="/Login"><i class="fa-solid fa-user"></i>Log ind</Link></p>
 </div>
 </StyledTopline>
 
